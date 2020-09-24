@@ -34,6 +34,22 @@ const routes: Array<RouteConfig> = [
     component: loadable(() => import("pages/clipboard"), options),
   },
   {
+    path: "/excel/export-excel",
+    component: loadable(() => import("pages/excel/export-excel"), options),
+  },
+  {
+    path: "/excel/export-selected-excel",
+    component: loadable(() => import("pages/excel/selected-excel"), options),
+  },
+  {
+    path: "/excel/export-merge-header",
+    component: loadable(() => import("pages/excel/merge-header"), options),
+  },
+  {
+    path: "/excel/upload-excel",
+    component: loadable(() => import("pages/excel/upload-excel"), options),
+  },
+  {
     path: "/hello-world",
     component: loadable(() => import("pages/hello-world"), options),
   },

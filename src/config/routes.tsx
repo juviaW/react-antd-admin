@@ -5,6 +5,7 @@ import {
   PaperClipOutlined,
   InfoOutlined,
   FilePdfOutlined,
+  ProfileOutlined,
 } from "@ant-design/icons"
 import React from "react"
 
@@ -50,6 +51,29 @@ const basicRoutes: Array<Route> = [
     icon: <PaperClipOutlined />,
     key: "clipboard",
     name: "剪贴板",
+  },
+  {
+    icon: <ProfileOutlined />,
+    key: "excel",
+    name: "Excel",
+    children: [
+      {
+        key: "export-excel",
+        name: "导出 Excel",
+      },
+      {
+        key: "export-selected-excel",
+        name: "导出 已选择项",
+      },
+      {
+        key: "export-merge-header",
+        name: "导出 多级表头",
+      },
+      {
+        key: "upload-excel",
+        name: "上传 Excel",
+      },
+    ],
   },
   {
     icon: <LikeOutlined />,
